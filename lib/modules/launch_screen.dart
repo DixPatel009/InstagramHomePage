@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:intagramhome/modules/home/home_screen.dart';
+import 'package:intagramhome/modules/main/main_screen.dart';
 import 'package:intagramhome/utils/navigator.dart';
 import 'package:intagramhome/widgets/app_texts.dart';
 import 'package:intagramhome/widgets/svg_icon.dart';
@@ -22,7 +22,7 @@ class _LaunchScreenState extends State<LaunchScreen> {
     ).then((value) {
       NavigatorUtils.pushReplace(
         context,
-        const HomeScreen(),
+        MainScreen(),
         animationType: AnimationType.fade,
       );
     });
